@@ -213,8 +213,8 @@ border-radius:55px;
 border-color:rgb(255,0,0);
 top:500px;
 position:absolute;
-height:150px;
-width:300px;
+height:250px;
+width:400px;
 background-color:rgb(0,0,0);
 }
 .ufo3 {
@@ -367,10 +367,27 @@ body{
 	<div class='lilfacebook'></div>
 
 	    <div class="nameholder"> <h2 class="neon" data-text=" Diamondrolls University "> Diamondrolls University </h2> </div>
-
+<div class="nameholder">
+<h2 class="neon" data-text="  DUC # "> DUC # </h2> 
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+</div>
 
 <script>
- 
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+  </body>
+
+</html>
 
 
 </script>
