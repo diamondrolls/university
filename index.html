@@ -379,8 +379,11 @@ body{
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    alert("wrong DUC#");
     return false;
+if (x == "2020") {
+    window.open("https://diamondrolls.github.io/bitcoin/", "_blank");
+    } 
   }
 }
 </script>
