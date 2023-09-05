@@ -373,19 +373,20 @@ body{
   Name: <input type="text" name="fname">
   <input type="submit" value="Submit">
 </form> 
-	<br> <br><br> <br><br> <br>
+	</div></center> 
+<br> <br><br> <br><br> <br>
 	<a href="https://diamondrolls.github.io/uploadpage/">   <h2 class="neon" data-text="  Get DUC# "> Get DUC# </h2> </a>
-</div></center> 
 
 <script>
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
+  if (x == "2020") {
+    window.open("https://diamondrolls.github.io/bitcoin/");
+   return true;
+    
+else (x == "") {
     alert("wrong DUC#");
     return false;
-if (x == "2020") {
-    window.open("https://diamondrolls.github.io/bitcoin/");
-   return;
 } 
   }
 }
